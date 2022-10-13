@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title> Sinclair</title>
+
+    <meta name="author" content= "Cati"/>
+
+    <style>
+        body{
+            margin:0;
+            background-image:url("./Fotos/blurred\ schwarz\ weiß.jpg");
+            background-size: cover;
+        }
+        .header{
+            text-align: right;
+            padding-right: 5vw;
+        }
+        .logo { 
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-inline: 90px;
+            margin: 0;
+        }
+        .logo-elem{
+            height: 30vh;
+            width: auto;
+        }
+        .menu{
+            position: absolute;
+            right: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: ghostwhite;
+            visibility: hidden;
+        }
+        .untertitel {
+            position: absolute;
+            font-family: 'Special Elite', cursive;
+            font-style: normal;
+            font-weight: normal;
+
+        }
+
+    </style>
+
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div class="menu" id="menu-content">
+    <div id="menu-close">
+        <img src="Fotos/menu button.svg" alt="menü button"> </div>
+
+    <div>
+        <p><a href="about me.html">About me</a></p>
+        <p><a href="collection1.html"> Collection 1 </a></p>
+        <p><a href="blog.html"> Blog </a></p>
+        <p><a href="Surprise.html"> Surprise </a></p>
+        <p> <a href=contact.htmlt> Contact</a></p>
+    </div>
+</div>
+<div class="header">
+    <div target="_blank" id="menu">
+     <img src="Fotos/menu button.svg" alt="menü button"> 
+    </div>
+</div>
+
+<div class="logo"> <img src="Fotos/NPTUN_SINCLAIR.jpg" class="logo-elem"> </div>
+
+<div class="untertitel"> <p> WANT TO GO TO A DIFFERENT REALITY?</p>
+</div> 
+
+<script>
+    document.getElementById('menu').addEventListener('click', () => {
+        document.getElementById('menu-content').style.visibility = 'visible'
+    })
+    
+    document.getElementById('menu-close').addEventListener('click', () => {
+        document.getElementById('menu-content').style.visibility = 'hidden'
+    })
+</script>
+</body>
+
+        
+</html>
